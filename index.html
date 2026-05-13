@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">YN<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Get in Touch</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Designer & Developer</p>
+      <h1 class="hero-title">
+        I craft digital<br>
+        experiences that<br>
+        <em>feel alive</em>
+      </h1>
+      <p class="hero-sub">
+        Building thoughtful interfaces, brands, and products<br>
+        from Burlington, MA.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-ghost">Say Hello</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Work Section -->
+  <section id="work" class="section work">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Selected Projects</p>
+        <h2 class="section-title">Recent Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <a href="#" class="project-card">
+          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+            <span class="project-placeholder">Project Screenshot</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Web Design</span>
+              <span>Development</span>
+            </div>
+            <h3>Project Name One</h3>
+            <p>A brief description of what this project was about and what you did. Keep it to 1-2 sentences.</p>
+          </div>
+          <div class="project-arrow">&#8599;</div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-img" style="background: linear-gradient(135deg, #0f3460, #533483);">
+            <span class="project-placeholder">Project Screenshot</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Branding</span>
+              <span>UI/UX</span>
+            </div>
+            <h3>Project Name Two</h3>
+            <p>A brief description of what this project was about and what you did. Keep it to 1-2 sentences.</p>
+          </div>
+          <div class="project-arrow">&#8599;</div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-img" style="background: linear-gradient(135deg, #2d132c, #801336);">
+            <span class="project-placeholder">Project Screenshot</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Mobile App</span>
+              <span>Product Design</span>
+            </div>
+            <h3>Project Name Three</h3>
+            <p>A brief description of what this project was about and what you did. Keep it to 1-2 sentences.</p>
+          </div>
+          <div class="project-arrow">&#8599;</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">Your Photo</div>
+        </div>
+        <div class="about-content">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">A little bit<br>about myself</h2>
+          <p class="about-text">
+            Hi, I'm <strong>Your Name</strong> — a designer and developer based in Burlington, MA. 
+            I love building things for the web that are beautiful, functional, and thoughtful.
+          </p>
+          <p class="about-text">
+            When I'm not designing or coding, you'll find me [your hobbies here]. 
+            I'm always open to new projects and collaborations.
+          </p>
+          <div class="skills-row">
+            <div class="skill-chip">HTML / CSS</div>
+            <div class="skill-chip">JavaScript</div>
+            <div class="skill-chip">React</div>
+            <div class="skill-chip">Figma</div>
+            <div class="skill-chip">UI/UX</div>
+            <div class="skill-chip">Branding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="contact-inner">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="contact-title">Let's build<br>something <em>great</em></h2>
+        <p class="contact-sub">Have a project in mind? I'd love to hear about it.</p>
+        <a href="mailto:you@example.com" class="btn btn-primary btn-large">you@example.com</a>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Twitter</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Your Name. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
