@@ -43,10 +43,10 @@
       </div>
       <h1 class="project-hero-title">Peg Lab Plinko!</h1>
       <p class="project-hero-sub">
-        An interactive STEM learning toy for 4th and 5th graders — designed, fabricated, and programmed end-to-end by a 5-person team I co-led for Cornerstone of Engineering 2.
+        An interactive STEM learning toy for 4th and 5th graders — designed, fabricated, and programmed end-to-end by a 4-person team I co-led for Cornerstone of Engineering 2.
       </p>
-      <div class="project-cover" style="background: linear-gradient(135deg, #1f2d1b, #4a6b3a);">
-        <span>Peg Lab Plinko!</span>
+      <div class="project-cover">
+        <img src="images/peg-lab-plinko/01_hero_final_toy_topdown.png" alt="Final Peg Lab Plinko! toy from above — pegs placed, LEDs lit, ready for play">
       </div>
     </div>
   </header>
@@ -61,7 +61,7 @@
         </div>
         <div>
           <dt>Team</dt>
-          <dd>5 students</dd>
+          <dd>4 students</dd>
         </div>
         <div>
           <dt>Course</dt>
@@ -79,30 +79,135 @@
           <dt>Audience</dt>
           <dd>4th–5th grade students</dd>
         </div>
+        <div>
+          <dt>Documentation</dt>
+          <dd><a href="docs/peg-lab-plinko-technical-report.pdf" target="_blank" rel="noopener">Technical Report (PDF) &#8599;</a></dd>
+        </div>
       </aside>
 
       <div class="project-content">
         <h3>Overview</h3>
         <p>
-          The brief: design a STEM learning toy that 4th and 5th graders would actually want to play with, and that could teach something along the way. Our team landed on Peg Lab Plinko! — a Plinko-style board where the peg layout and lighting respond to player input, turning the classic dropped-puck mechanic into a small physics lesson.
+          The brief: design a STEM learning toy that 4th and 5th graders would actually want to play with, and that could teach something along the way. Our team landed on Peg Lab Plinko! — a Plinko-style board where the peg layout and lighting respond to player input, turning the classic dropped-puck mechanic into a small physics lesson. Two teams take turns placing pegs to build strategic routes, then launch balls with spring-loaded launchers trying to land in LED-lit target wells. The electronics — a SparkFun RedBoard, photoresistors, and color-coded LEDs — automate scoring and randomize targets each round. The toy came in at $47.08 (well under the $100 budget), survived two live showcases with only two pegs breaking, and the classroom teacher asked to keep it.
         </p>
+
+        <div class="figure-grid cols-2">
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/02_gameplay_showcase_overhead.png" alt="Students playing Peg Lab Plinko! at the final showcase">
+            </div>
+            <figcaption><strong>Gameplay</strong>Students playing at the final showcase</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/03_board_detail_side_view.png" alt="Top-down detail of the Plinko board showing peg grid, wells, and LEDs">
+            </div>
+            <figcaption><strong>Board detail</strong>Peg grid, wells, and LED targets</figcaption>
+          </figure>
+        </div>
 
         <h3>What I did</h3>
         <ul>
-          <li>Co-led a 5-person team through concept, prototyping, and final build over the semester.</li>
-          <li>Designed mechanical components in SolidWorks and fabricated parts via laser cutting and 3D printing.</li>
-          <li>Built and programmed Arduino-based electronics in C++ for the interactive behavior — sensors, lighting, and player feedback.</li>
+          <li>Co-led a 4-person team through concept, prototyping, and final build over the semester.</li>
+          <li>Designed and wired the full electrical system — LEDs, photoresistors, slide switch, and SparkFun RedBoard — handling all soldering and breadboard layout.</li>
+          <li>Wrote the Arduino C++ code using the TaskScheduler library to monitor all six photoresistors concurrently and automate light switching for gameplay.</li>
+          <li>Created the final CAD assemblies in SolidWorks, gathering individual part files from teammates and producing exploded views and engineering drawings.</li>
           <li>Delivered monthly design reviews and incorporated peer and mentor feedback into successive iterations of the toy.</li>
         </ul>
 
-        <h3>What I learned</h3>
+        <div class="figure-grid cols-3">
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/04_wiring_diagram_redboard.png" alt="Breadboard and SparkFun RedBoard wiring under the Plinko board">
+            </div>
+            <figcaption><strong>Electrical</strong>Breadboard + RedBoard wiring</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/05_cad_exploded_view.png" alt="SolidWorks exploded view of the Peg Lab Plinko! assembly">
+            </div>
+            <figcaption><strong>CAD</strong>SolidWorks exploded view</figcaption>
+          </figure>
+        </div>
+
+        <h3>Design process</h3>
         <p>
-          Designing for kids forces clarity. If a 4th grader can't figure out what to do in the first ten seconds, the engineering doesn't matter. Most of the late-stage iteration was about removing friction from the play experience, not adding more features.
+          The project moved through five milestones over the semester — from problem framing and cardboard prototyping to a fully functional, painted, and wired final product. Each milestone ended with a design review where the team presented progress and incorporated feedback.
         </p>
 
-        <p>
-          On the team side, this was my first real exposure to running monthly design reviews — preparing the work, taking critique, deciding what to act on, and moving forward. That cadence has carried over into how I work in AerospaceNU now.
+        <div class="figure-grid cols-4">
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/07_process_cardboard_prototype.png" alt="M2 cardboard prototype of the Plinko board">
+            </div>
+            <figcaption><strong>M2 · Cardboard</strong>Concept prototype</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/08_process_first_lasercut_build.png" alt="M3 first laser-cut wood build">
+            </div>
+            <figcaption><strong>M3 · First build</strong>Laser-cut wood</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/09_process_mccs_user_testing.png" alt="MCCS students testing the prototype">
+            </div>
+            <figcaption><strong>M4 · User test</strong>MCCS classroom visit</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/10_process_final_painted.png" alt="Final painted Peg Lab Plinko! board">
+            </div>
+            <figcaption><strong>M4 · Final</strong>Painted + wired</figcaption>
+          </figure>
+        </div>
+        <p class="grid-caption">
+          Cardboard concept → first laser-cut build → user testing with MCCS students → final painted product.
         </p>
+
+        <h3>Component details</h3>
+        <figure class="figure-full figure-wide">
+          <div class="figure-frame">
+            <img src="images/peg-lab-plinko/15_peg_drawing.png" alt="Engineering drawings of the six peg varieties — ramps, splitters, cylinders, hopper">
+          </div>
+          <figcaption><strong>Peg varieties</strong>The six interchangeable peg types players choose from</figcaption>
+        </figure>
+
+        <div class="figure-grid cols-3">
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/16_launcher_drawing.png" alt="Engineering drawing of the spring launcher parts">
+            </div>
+            <figcaption><strong>Launcher drawing</strong>Engineering drawing of the spring launcher parts</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/17_launcher_exploded.png" alt="Exploded view of the spring launcher — sleeve, plunger, and spring base">
+            </div>
+            <figcaption><strong>Exploded view</strong>Sleeve, plunger, and spring base</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame">
+              <img src="images/peg-lab-plinko/18_launcher_assembled.png" alt="Assembled spring launcher ready to fire">
+            </div>
+            <figcaption><strong>Assembled</strong>The main physical interaction point</figcaption>
+          </figure>
+        </div>
+
+        <h3>What I learned</h3>
+        <p>
+          Designing for kids forces clarity. If a 4th grader can't figure out what to do in the first ten seconds, the engineering doesn't matter. Most of the late-stage iteration was about removing friction from the play experience, not adding more features — for example, we found that accidental light changes from fingers hovering over photoresistors disrupted gameplay, which taught me how much sensor placement and threshold tuning matter in a real user environment.
+        </p>
+        <p>
+          On the team side, this was my first real exposure to running monthly design reviews — preparing the work, taking critique, deciding what to act on, and moving forward. That cadence has carried over into how I work in AerospaceNU now. I also learned the full weight of documentation: maintaining the design notebook wasn't just busywork, it was how we communicated progress across milestones and justified decisions to reviewers.
+        </p>
+
+        <figure class="figure-full figure-wide">
+          <div class="figure-frame">
+            <img src="images/peg-lab-plinko/13_showcase_closing_wide.png" alt="Wide shot of the final showcase — students crowded around the Peg Lab Plinko! station">
+          </div>
+          <figcaption><strong>Showcase</strong>Students didn't want to leave the station — the teacher asked to keep the toy for the classroom.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
