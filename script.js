@@ -21,7 +21,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
 
 // ---- Scroll reveal ----
 const revealElements = document.querySelectorAll(
-  '.section-header, .project-card, .about-photo, .about-content, .contact-inner'
+  '.section-header, .project-card, .timeline-entry, .about-photo, .about-content, .contact-inner, .project-meta, .project-content > *'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
@@ -30,28 +30,17 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger the animation slightly for grouped items
         setTimeout(() => {
           entry.target.classList.add('visible');
-        }, i * 80);
+        }, i * 60);
         observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.1 }
 );
 
 revealElements.forEach(el => observer.observe(el));
-
-// ---- Navbar background on scroll ----
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) {
-    nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
-  } else {
-    nav.style.borderBottomColor = 'rgba(255,255,255,0.04)';
-  }
-});
 
 // ---- Smooth scroll for anchor links ----
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
