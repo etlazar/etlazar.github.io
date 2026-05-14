@@ -15,11 +15,11 @@
   <nav class="nav">
     <a href="#" class="nav-logo">EL<span class="dot">.</span></a>
     <div class="nav-links">
-      <a href="#work">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
       <a href="#about">About</a>
-      <a href="#contact" class="nav-cta">Get in Touch</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
+      <a href="#contact" class="nav-cta">Contact Me</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span>
@@ -28,38 +28,134 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
-    <a href="#work">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
     <a href="#about">About</a>
-    <a href="#contact">Get in Touch</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Projects</a>
+    <a href="#contact">Contact Me</a>
   </div>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-grain"></div>
-    <div class="hero-content">
-      <div class="hero-rule"></div>
-      <p class="hero-tag">Mechanical Engineering &middot; Aerospace</p>
-      <h1 class="hero-title">
-        Designing things<br>
-        that <em>fly, move,</em><br>
-        and hold up
-      </h1>
-      <p class="hero-sub">
-        Hi, I'm Ethan Lazar — a mechanical engineering student<br>
-        at Northeastern, working on rockets and hardware in Boston, MA.
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">See My Work</a>
-        <a href="#contact" class="btn btn-ghost">Say Hello</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-inner">
+      <p class="page-header-tag">Portfolio</p>
+      <h1 class="page-header-title">Ethan Lazar</h1>
+      <div class="page-header-rule"></div>
+      <p class="page-header-welcome">Welcome to my corner of the web — a look at the projects, work, and ideas I've been building.</p>
     </div>
   </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">Photo</div>
+        </div>
+        <div class="about-content">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">A little bit<br>about myself</h2>
+          <p class="about-text">
+            I'm <strong>Ethan Lazar</strong>, a mechanical engineering student at <strong>Northeastern University</strong> (B.S. expected May 2028) with a minor in aerospace. Originally from Philadelphia, now based in Boston.
+          </p>
+          <p class="about-text">
+            I'm part of <strong>AerospaceNU</strong>, where I work on liquid-propellant rocket recovery systems, and I tutor undergrads in statics, thermodynamics, mechanics of materials, and calculus through the College of Engineering. I've studied abroad with Northeastern's Global Scholars Program in London and Oakland, and I'm on the Dean's List (Fall 2025, GPA 3.78).
+          </p>
+          <p class="about-text">
+            Outside of school, you'll find me running, on the track, cooking, or somewhere near an airplane.
+          </p>
+          <div class="skills-row">
+            <div class="skill-chip">SolidWorks</div>
+            <div class="skill-chip">AutoCAD</div>
+            <div class="skill-chip">MATLAB</div>
+            <div class="skill-chip">C++</div>
+            <div class="skill-chip">Python</div>
+            <div class="skill-chip">3D Printing</div>
+            <div class="skill-chip">Laser Cutting</div>
+            <div class="skill-chip">Soldering</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Education</p>
+        <h2 class="section-title">School</h2>
+      </div>
+      <div class="timeline">
+
+        <article class="timeline-entry">
+          <div class="timeline-meta">
+            <p class="timeline-date">Expected May 2028</p>
+            <p class="timeline-location">Boston, MA</p>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">B.S. Mechanical Engineering, Minor in Aerospace</h3>
+            <p class="timeline-org">Northeastern University</p>
+            <p class="timeline-detail"><strong>GPA</strong> 3.78 &middot; Dean's List, Fall 2025</p>
+            <p class="timeline-detail"><strong>Study Abroad</strong> NU London (Fall 2024), NU Oakland (Spring 2025)</p>
+            <p class="timeline-detail"><strong>Activities</strong> AerospaceNU, Club Triathlon</p>
+            <p class="timeline-detail timeline-label"><strong>Relevant Coursework</strong></p>
+            <div class="course-chips">
+              <span>Thermodynamics</span>
+              <span>Statics</span>
+              <span>Mechanics of Materials</span>
+              <span>Dynamics</span>
+              <span>Intro to Flight</span>
+              <span>Physics I–II</span>
+              <span>Calculus I–III</span>
+              <span>Diff Eq &amp; Linear Algebra</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-entry">
+          <div class="timeline-meta">
+            <p class="timeline-date">May 2024</p>
+            <p class="timeline-location">Philadelphia, PA</p>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">High School Diploma</h3>
+            <p class="timeline-org">Central High School</p>
+            <p class="timeline-detail"><strong>Awards</strong> Honor Roll, 2021–2024</p>
+            <p class="timeline-detail"><strong>Activities</strong> Cross Country (Co-captain), Track &amp; Field (Co-captain)</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Experience</p>
+        <h2 class="section-title">Work</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-entry">
+          <div class="timeline-meta">
+            <p class="timeline-date">Jan 2026 — Present</p>
+            <p class="timeline-location">Boston, MA</p>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Tutor</h3>
+            <p class="timeline-org">Northeastern University &middot; College of Engineering</p>
+            <ul class="timeline-list">
+              <li>Tutor undergraduate students in statics, thermodynamics, mechanics of materials, and calculus.</li>
+              <li>Manage scheduling and coordinate multiple weekly tutoring sessions.</li>
+              <li>Improve student comprehension through clear explanations and problem-solving strategies.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- Work Section -->
   <section id="work" class="section work">
@@ -122,124 +218,12 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section experience">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-tag">Experience</p>
-        <h2 class="section-title">Work</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-entry">
-          <div class="timeline-meta">
-            <p class="timeline-date">Jan 2026 — Present</p>
-            <p class="timeline-location">Boston, MA</p>
-          </div>
-          <div class="timeline-body">
-            <h3 class="timeline-role">Tutor</h3>
-            <p class="timeline-org">Northeastern University &middot; College of Engineering</p>
-            <ul class="timeline-list">
-              <li>Tutor undergraduate students in statics, thermodynamics, mechanics of materials, and calculus.</li>
-              <li>Manage scheduling and coordinate multiple weekly tutoring sessions.</li>
-              <li>Improve student comprehension through clear explanations and problem-solving strategies.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section education">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-tag">Education</p>
-        <h2 class="section-title">School</h2>
-      </div>
-      <div class="timeline">
-
-        <article class="timeline-entry">
-          <div class="timeline-meta">
-            <p class="timeline-date">Expected May 2028</p>
-            <p class="timeline-location">Boston, MA</p>
-          </div>
-          <div class="timeline-body">
-            <h3 class="timeline-role">B.S. Mechanical Engineering, Minor in Aerospace</h3>
-            <p class="timeline-org">Northeastern University</p>
-            <p class="timeline-detail"><strong>GPA</strong> 3.78 &middot; Dean's List, Fall 2025</p>
-            <p class="timeline-detail"><strong>Study Abroad</strong> NU London (Fall 2024), NU Oakland (Spring 2025)</p>
-            <p class="timeline-detail"><strong>Activities</strong> AerospaceNU, Club Triathlon</p>
-            <p class="timeline-detail timeline-label"><strong>Relevant Coursework</strong></p>
-            <div class="course-chips">
-              <span>Thermodynamics</span>
-              <span>Statics</span>
-              <span>Mechanics of Materials</span>
-              <span>Dynamics</span>
-              <span>Intro to Flight</span>
-              <span>Physics I–II</span>
-              <span>Calculus I–III</span>
-              <span>Diff Eq &amp; Linear Algebra</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="timeline-entry">
-          <div class="timeline-meta">
-            <p class="timeline-date">May 2024</p>
-            <p class="timeline-location">Philadelphia, PA</p>
-          </div>
-          <div class="timeline-body">
-            <h3 class="timeline-role">High School Diploma</h3>
-            <p class="timeline-org">Central High School</p>
-            <p class="timeline-detail"><strong>Awards</strong> Honor Roll, 2021–2024</p>
-            <p class="timeline-detail"><strong>Activities</strong> Cross Country (Co-captain), Track &amp; Field (Co-captain)</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-photo">
-          <div class="photo-placeholder">Photo</div>
-        </div>
-        <div class="about-content">
-          <p class="section-tag">About Me</p>
-          <h2 class="section-title">A little bit<br>about myself</h2>
-          <p class="about-text">
-            I'm <strong>Ethan Lazar</strong>, a mechanical engineering student at <strong>Northeastern University</strong> (B.S. expected May 2028) with a minor in aerospace. Originally from Philadelphia, now based in Boston.
-          </p>
-          <p class="about-text">
-            I'm part of <strong>AerospaceNU</strong>, where I work on liquid-propellant rocket recovery systems, and I tutor undergrads in statics, thermodynamics, mechanics of materials, and calculus through the College of Engineering. I've studied abroad with Northeastern's Global Scholars Program in London and Oakland, and I'm on the Dean's List (Fall 2025, GPA 3.78).
-          </p>
-          <p class="about-text">
-            Outside of school, you'll find me running, on the track, cooking, or somewhere near an airplane.
-          </p>
-          <div class="skills-row">
-            <div class="skill-chip">SolidWorks</div>
-            <div class="skill-chip">AutoCAD</div>
-            <div class="skill-chip">MATLAB</div>
-            <div class="skill-chip">C++</div>
-            <div class="skill-chip">Python</div>
-            <div class="skill-chip">3D Printing</div>
-            <div class="skill-chip">Laser Cutting</div>
-            <div class="skill-chip">Soldering</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
       <div class="contact-inner">
-        <p class="section-tag">Get in Touch</p>
-        <h2 class="contact-title">Let's build<br>something <em>great</em></h2>
+        <p class="section-tag">Contact Me</p>
+        <h2 class="contact-title">Contact <em>Me</em></h2>
         <p class="contact-sub">Have a project, internship, or collaboration in mind? I'd love to hear about it.</p>
         <a href="mailto:lazar.e@northeastern.edu" class="btn btn-primary btn-large">lazar.e@northeastern.edu</a>
         <p class="contact-phone"><a href="tel:+12674089506">(267) 408-9506</a></p>
