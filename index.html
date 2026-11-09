@@ -6,44 +6,45 @@
   <title>Ethan Lazar — Mechanical Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <a href="#" class="nav-logo">EL<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#work">Projects</a>
-      <a href="#contact" class="nav-cta">Contact Me</a>
-    </div>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#work">Projects</a>
-    <a href="#contact">Contact Me</a>
-  </div>
-
-  <!-- Page Header -->
-  <header class="page-header">
-    <div class="page-header-inner">
-      <p class="page-header-tag">Portfolio</p>
-      <h1 class="page-header-title">Ethan Lazar</h1>
-      <div class="page-header-rule"></div>
-      <p class="page-header-welcome">Welcome to my corner of the web — a look at the projects, work, and ideas I've been building.</p>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-logo">Ethan Lazar</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
+
+  <main>
+  <!-- Hero -->
+  <section class="container hero" aria-label="Introduction">
+    <div class="panel hero-main">
+      <p class="label label-accent">Mechanical Engineering &middot; Northeastern &rsquo;28</p>
+      <h1 class="hero-name">Ethan Lazar</h1>
+      <p class="hero-intro">Welcome to my corner of the web — a look at the projects, work, and ideas I've been building.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View projects</a>
+        <a href="https://github.com/etlazar/etlazar.github.io/blob/main/Master%20Resume%20(1).md" class="btn btn-secondary" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </div>
+    <aside class="panel hero-glance" aria-labelledby="glance-title">
+      <h2 class="label" id="glance-title">At a glance</h2>
+      <dl class="glance-list">
+        <div><dt>Current role</dt><dd>Co-op, The Roux Institute</dd></div>
+        <div><dt>Team</dt><dd>AerospaceNU, Project Lead</dd></div>
+        <div><dt>Key skills</dt><dd>SolidWorks, MATLAB, Ansys, Mechanical Testing</dd></div>
+        <div><dt>Graduating</dt><dd>May 2028</dd></div>
+      </dl>
+    </aside>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="section about">
@@ -87,14 +88,16 @@
   <section id="education" class="section education">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Education</p>
-        <h2 class="section-title">School</h2>
+        <div>
+          <p class="section-tag">Education</p>
+          <h2 class="section-title">School</h2>
+        </div>
       </div>
       <div class="timeline">
 
         <article class="timeline-entry">
           <div class="timeline-meta">
-            <p class="timeline-date">Expected May 2028</p>
+            <p class="timeline-date">May 2028 (expected)</p>
             <p class="timeline-location">Boston, MA</p>
           </div>
           <div class="timeline-body">
@@ -142,8 +145,10 @@
   <section id="experience" class="section experience">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Experience</p>
-        <h2 class="section-title">Work</h2>
+        <div>
+          <p class="section-tag">Experience</p>
+          <h2 class="section-title">Work</h2>
+        </div>
       </div>
       <div class="timeline">
         <article class="timeline-entry">
@@ -189,62 +194,62 @@
   <section id="work" class="section work">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Current Projects</p>
-        <h2 class="section-title">What I'm Working On</h2>
+        <div>
+          <p class="section-tag">Current Projects</p>
+          <h2 class="section-title">What I'm Working On</h2>
+        </div>
+        <p class="section-count">3 projects</p>
       </div>
       <div class="projects-grid">
 
         <a href="lcp-metallization.html" class="project-card">
-          <div class="project-img" style="background: linear-gradient(135deg, #1f1f24, #4a4a55);">
+          <div class="project-img">
             <span class="project-placeholder">LCP Characterization</span>
           </div>
           <div class="project-info">
             <div class="project-tags">
               <span>Roux Institute</span>
               <span>Instron</span>
-              <span>Jul — Nov 2026</span>
             </div>
+            <p class="project-date">Jul — Nov 2026</p>
             <h3>Characterization &amp; Metallization of a Liquid Crystal Polymer</h3>
             <p>Ran tensile, compression, and three-point bend tests to determine the elastic modulus, strength, and flexural properties of LCP specimens. Developed a coating-thickness measurement method, prepared samples for optical microscopy, and co-authored a NAMRC manuscript.</p>
           </div>
-          <div class="project-arrow">&#8599;</div>
         </a>
 
         <a href="liquid-rocket-recovery.html" class="project-card">
-          <div class="project-img" style="background: linear-gradient(135deg, #0b1e3f, #1d3b6f);">
+          <div class="project-img">
             <span class="project-placeholder">Liquid Rocket Recovery</span>
           </div>
           <div class="project-info">
             <div class="project-tags">
               <span>AerospaceNU</span>
               <span>Project Lead</span>
-              <span>Jan 2026 — Present</span>
             </div>
+            <p class="project-date">Jan 2026 — Present</p>
             <h3>Liquid Rocket Airframe</h3>
             <p>Co-leading a 10-person team on AerospaceNU's liquid rocket airframe. Selected a dual-deploy recovery system, designed and 3D-printed bulkheads for the parachutes and electronics bay, and flew a subscale rocket to validate the design ahead of full-scale integration.</p>
           </div>
-          <div class="project-arrow">&#8599;</div>
         </a>
 
         <a href="level-1-certification.html" class="project-card">
-          <div class="project-img" style="background: linear-gradient(135deg, #2a0b0b, #6a1a1a);">
+          <div class="project-img">
             <span class="project-placeholder">L1 Certification</span>
           </div>
           <div class="project-info">
             <div class="project-tags">
               <span>AerospaceNU</span>
               <span>NAR L1</span>
-              <span>Jan 2026 — Present</span>
             </div>
+            <p class="project-date">Jan 2026 — Present</p>
             <h3>Level 1 High Power Rocketry Certification</h3>
             <p>Wrote a funding proposal that secured a $500 budget, then assembled a high-power rocket from a kit using epoxy fillets, sanding, and fin alignment. Performed pre-flight safety inspections and structural checks to NAR Level 1 standards.</p>
           </div>
-          <div class="project-arrow">&#8599;</div>
         </a>
 
       </div>
       <div class="work-more">
-        <a href="projects.html" class="btn btn-ghost">View All Projects &rarr;</a>
+        <a href="projects.html" class="btn btn-secondary">View All Projects &rarr;</a>
       </div>
     </div>
   </section>
@@ -252,19 +257,23 @@
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
-      <div class="contact-inner">
-        <p class="section-tag">Contact Me</p>
-        <h2 class="contact-title">Contact <em>Me</em></h2>
-        <p class="contact-sub">Have a project, internship, or collaboration in mind? I'd love to hear about it.</p>
-        <a href="mailto:lazar.e@northeastern.edu" class="btn btn-primary btn-large">lazar.e@northeastern.edu</a>
-        <p class="contact-phone"><a href="tel:+12674089506">(267) 408-9506</a></p>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/etlazar" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:lazar.e@northeastern.edu">Email</a>
+      <div class="panel contact-panel">
+        <div class="contact-text">
+          <p class="section-tag">Contact</p>
+          <h2 class="contact-title">Let&rsquo;s work together.</h2>
+          <p class="contact-sub">Have a project, internship, or collaboration in mind? I'd love to hear about it.</p>
+          <p class="contact-phone"><a href="tel:+12674089506">(267) 408-9506</a></p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:lazar.e@northeastern.edu" class="btn btn-secondary">lazar.e@northeastern.edu</a>
+          <a href="https://linkedin.com/in/etlazar" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/etlazar/etlazar.github.io/blob/main/Master%20Resume%20(1).md" class="btn btn-primary" target="_blank" rel="noopener">Résumé</a>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

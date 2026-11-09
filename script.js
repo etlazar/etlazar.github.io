@@ -2,53 +2,27 @@
    PORTFOLIO — SCRIPTS
    ============================================ */
 
-// ---- Mobile menu toggle ----
-const toggle = document.querySelector('.nav-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-toggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-  toggle.classList.toggle('active');
-});
-
-// Close mobile menu when a link is clicked
-mobileMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-    toggle.classList.remove('active');
-  });
-});
-
 // ---- Scroll reveal ----
-const revealElements = document.querySelectorAll(
-  '.section-header, .project-card, .timeline-entry, .about-photo, .about-content, .contact-inner, .project-meta, .project-content > *'
-);
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-revealElements.forEach(el => el.classList.add('reveal'));
+if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+  const revealElements = document.querySelectorAll(
+    '.section-header, .project-card, .timeline, .about-grid, .contact-panel, .project-meta, .project-content'
+  );
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 60);
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
+  revealElements.forEach(el => el.classList.add('reveal'));
 
-revealElements.forEach(el => observer.observe(el));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-// ---- Smooth scroll for anchor links ----
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});
+  revealElements.forEach(el => observer.observe(el));
+}
